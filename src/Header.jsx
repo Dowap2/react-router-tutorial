@@ -1,22 +1,28 @@
 import React from 'react';
+import { Link,Router } from "react-router-dom";
 import './Header.css';
 
-const MenuItem = ({active, children, to}) => (
-    <div className="menu-item">
-            {children}
-    </div>
-)
-
-const Header = () => {
+export function Header(){
     return (
         <div>
             <div className="logo">
                 velopert
             </div>
             <div className="menu">
-                <MenuItem>홈</MenuItem>
-                <MenuItem>소개</MenuItem>
-                <MenuItem>포스트</MenuItem>
+                <Router>
+                <li>
+                    <Link to="/">홈</Link>
+                </li>
+                <li>
+                    <Link to="/aladin">알라딘</Link>
+                </li>
+                <li>
+                    <Link to="/lionking">라이언킹</Link>
+                </li>
+                <li>
+                    <Link to="/spiderman">Spider Man</Link>
+                </li>
+                </Router>
             </div>
         </div>
     );
