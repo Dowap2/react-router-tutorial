@@ -7,10 +7,8 @@ import {SpiderMan} from "./SpiderMan";
 export function Routes(){
     return(
     <div>
-        <Router>
-            <Route path="/aladin" component={Aladin} />
-            <Route path="/lionking" component={LionKing} />
-            <Route path="/spiderman" component={SpiderMan} />
-        </Router>
+        <Route path="/aladin" component={Aladin} />
+        <Route path="/lionking" component={LionKing} />
+        <Route path="/spiderman" component={SpiderMan} />
     </div>)
 }

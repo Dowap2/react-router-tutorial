@@ -8,8 +8,7 @@ export function Header(){
             <div className="logo">
                 velopert
             </div>
-            <div className="menu">
-                <Router>
+            <div className="menu">   
                 <li>
                     <Link to="/">홈</Link>
                 </li>
@@ -22,7 +21,6 @@ export function Header(){
                 <li>
                     <Link to="/spiderman">Spider Man</Link>
                 </li>
-                </Router>
             </div>
         </div>
     );
